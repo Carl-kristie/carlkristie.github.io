@@ -12,20 +12,20 @@ $(document).ready(function() {
 	
 	/***************** Splashscreen ******************/
 	
-	$(window).load(function() {
+	// $(window).load(function() {
 		
-		$('.splashscreen').addClass('splashscreen--is-hidden');
+	// 	$('.splashscreen').addClass('splashscreen--is-hidden');
 		
-		setTimeout(function() {
-			$('.splashscreen').css( {'display': 'none'} );
+	// 	setTimeout(function() {
+	// 		$('.splashscreen').css( {'display': 'none'} );
 			
-			/* Introduction Animation */
-			var $name = $('.introduction__content-el--name'),
-	  			$job = $('.introduction__content-el--job');
-			TweenLite.to([$name, $job], 0.8, {x: 0, opacity: 1, ease: Power1.easeOut});
-		}, 800);
+	// 		/* Introduction Animation */
+	// 		var $name = $('.introduction__content-el--name'),
+	//   			$job = $('.introduction__content-el--job');
+	// 		TweenLite.to([$name, $job], 0.8, {x: 0, opacity: 1, ease: Power1.easeOut});
+	// 	}, 800);
 		
-	});
+	// });
 	
 	/***************** Responsive Nav ******************/
 
