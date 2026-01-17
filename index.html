@@ -10,6 +10,7 @@
   <meta name="author" content="Carlkristie Obinna">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body>
   <!-- SECTION: Splashscreen -->
   <div class="splashscreen">
@@ -23,14 +24,17 @@
   <div id="top" class="navigation">
     <div class="navigation__wrapper wrapper--large">
       <a class="navigation__logo logo" href="#0">CK</a>
+
       <nav class="navigation__container">
         <ul class="navigation__list">
           <li><a href="#0">Home</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#work">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+
       <div class="navigation__burger">
         <span class="navigation__burger-el navigation__burger-el--top"></span>
         <span class="navigation__burger-el navigation__burger-el--middle"></span>
@@ -48,13 +52,37 @@
         <span class="introduction__content-el introduction__content-el--description">Creative</span>
         <span class="introduction__content-el introduction__content-el--job">Web Developer</span>
       </h1>
-      <svg class="introduction__arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 130 65" xml:space="preserve">
+
+      <svg class="introduction__arrow" xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 130 65" xml:space="preserve">
       </svg>
     </div>
   </header>
   <!-- END SECTION: Intro -->
 
   <main role="main">
+    <!-- SECTION: About -->
+    <section id="about" class="about">
+      <h2 class="title">About Me</h2>
+
+      <div class="about__wrapper wrapper--large">
+        <div class="about__content blurb blurb--framed">
+          <p class="blurb__copy">
+            For the past six years, I’ve navigated the ever-evolving landscape of web development, transforming intricate business requirements into scalable, high-performance digital products. I don’t just write code; I architect systems that are built to last and designed to grow.
+          </p>
+
+          <p class="blurb__copy">
+            My journey began in the high-stakes environment of enterprise landing pages, where I learned that every millisecond of load time and every pixel of layout directly impacts user trust and brand authority. Today, I’ve evolved that precision into architecting full-scale web applications. I take the same obsession with performance and UX and apply it to complex, data-driven systems, ensuring that even the most robust backend logic translates into a seamless, human-centered experience.
+          </p>
+
+          <p class="blurb__copy no-margin">
+            When I’m not optimizing state management or refining pixel-perfect layouts, I’m exploring new ways to make the web more accessible, inclusive, and performant for everyone.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION: About -->
+
+    <!-- SECTION: Skills -->
     <section class="skills-section" id="skills">
       <h2 class="title">Skills</h2>
       <ul class="skills-container">
@@ -68,12 +96,26 @@
         <li class="skills php">PHP</li>
       </ul>
     </section>
+    <!-- END SECTION: Skills -->
 
     <!-- SECTION: Work -->
     <section id="work" class="work">
       <h2 class="work__heading title">Latest Projects</h2>
+
       <div class="work__wrapper wrapper--large">
         <ul class="work__list">
+          <li class="work__list-el work__list-el--is-active">
+            <div class="work__content">
+              <div class="work__content-blurb blurb blurb--framed">
+                <h3 class="blurb__heading">Jwilimited <br>Web Design</h3>
+                <p class="blurb__copy">A website for an Electrical Engineering company</p>
+              </div>
+              <a class="transform-link" href="https://jwilimitedng.com/" target="_blank" rel="noopener">See full project</a>
+            </div>
+            <div class="work__visual">
+              <img src="assets/img/jwilimited.png" alt="Jwilimited website preview">
+            </div>
+          </li>
 
           <li class="work__list-el">
             <div class="work__content">
@@ -101,7 +143,6 @@
             </div>
           </li>
 
-          <!-- ADDED PROJECT 1 -->
           <li class="work__list-el">
             <div class="work__content">
               <div class="work__content-blurb blurb blurb--framed">
@@ -115,7 +156,6 @@
             </div>
           </li>
 
-          <!-- ADDED PROJECT 2 -->
           <li class="work__list-el">
             <div class="work__content">
               <div class="work__content-blurb blurb blurb--framed">
@@ -129,26 +169,13 @@
             </div>
           </li>
         </ul>
-     <li class="work__list-el work__list-el--is-active">
-            <div class="work__content">
-              <div class="work__content-blurb blurb blurb--framed">
-                <h3 class="blurb__heading">Jwilimited <br>Web Design</h3>
-                <p class="blurb__copy">A website for an Electrical Engineering company</p>
-              </div>
-              <a class="transform-link" href="https://jwilimitedng.com/" target="_blank" rel="noopener">See full project</a>
-            </div>
-            <div class="work__visual">
-              <img src="assets/img/jwilimited.png" alt="Jwilimited website preview">
-            </div>
-          </li>
-        <!-- IMPORTANT: updated to 6 dots because you now have 6 projects -->
+
         <ul class="work__navigation">
           <li class="work__navigation-el work__navigation-el--is-active"></li>
           <li class="work__navigation-el"></li>
           <li class="work__navigation-el"></li>
           <li class="work__navigation-el"></li>
           <li class="work__navigation-el"></li>
-
         </ul>
       </div>
     </section>
@@ -157,12 +184,12 @@
     <!-- SECTION: Contact -->
     <section id="contact" class="contact">
       <h2 class="contact__heading title">Contact Me</h2>
+
       <div class="contact__wrapper wrapper--large">
         <div class="contact__visual">
           <img src="assets/img/map.PNG" alt="Carlkristie Obinna's location">
         </div>
 
-        <!-- Simple form setup: formsubmit.co -->
         <form class="contact__form" action="https://formsubmit.co/carlkristieobinna@gmail.com" method="POST">
           <input class="contact__form-el contact__form-el--name" type="text" placeholder="Your Name" spellcheck="false" name="name">
           <input class="contact__form-el contact__form-el--email" type="email" placeholder="Your Email" spellcheck="false" name="email">
@@ -178,10 +205,15 @@
   <!-- SECTION: Footer -->
   <footer class="footer">
     <div class="footer__wrapper wrapper--large">
-      <p class="footer__credit no-margin">Built &amp; maintained by <a href="https://github.com/Carl-kristie" target="_blank" rel="noopener">Carlkristie Obinna</a></p>
+      <p class="footer__credit no-margin">
+        Built &amp; maintained by
+        <a href="https://github.com/Carl-kristie" target="_blank" rel="noopener">Carlkristie Obinna</a>
+      </p>
+
       <a class="footer__logo logo" href="#0">CK</a>
+
       <a class="footer__arrow" href="#top">
-        <svg class="footer__arrow-el" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 130 65" xml:space="preserve">
+        <svg class="footer__arrow-el" xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 130 65" xml:space="preserve">
         </svg>
       </a>
     </div>
@@ -192,7 +224,6 @@
   <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
   <script src="assets/js/functions-min.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID and uncomment -->
   <!--
   <script>
   (function(b, o, i, l, e, r) {
